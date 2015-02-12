@@ -14,16 +14,21 @@ pose_publisher
     2.1.1 Published Topics
     
     /pose (geometry_msgs/PoseStamped)
+    
       Current robot pose. 
 
     2.1.2 Parameters
+    
       ~publish_frequency (double, default: 10.0)
+      
         Frequency (hz) at which to publish the robot pose. 
 
       ~map_frame (std::string, default: map)
+      
         The frame attached to the map. 
 
       ~base_frame (std::string, default: base_link)
+      
         The frame attached to the mobile base.
         
 3. Usage
