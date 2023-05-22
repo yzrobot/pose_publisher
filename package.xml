@@ -1,14 +1,15 @@
 <?xml version="1.0"?>
 <package>
   <name>pose_publisher</name>
-  <version>0.0.1</version>
-  <description>This package provides the current position and orientation of the robot in the map.</description>
+  <version>0.1.0</version>
+  <description>This package provides the current position and orientation of the robot in the map with PoseWithCovarianceStamped format.</description>
   
-  <maintainer email="zhi.yan@ai.univ-paris8.fr">Zhi Yan</maintainer>
+  <author email="zhi.yan@ai.univ-paris8.fr">Zhi Yan</author>
+  <maintainer email="smoreno@robotnik.es">Sandra Moreno</maintainer>
   
-  <license>BSD</license>
-  
-  <url type="website">http://www.ai.univ-paris8.fr/~yz</url>
+  <license>BSD</license>  
+  <url type="website">http://wiki.ros.org/pose_publisher</url>
+  <url type="repository">https://github.com/RobotnikAutomation/pose_publisher.git</url>
   
   <buildtool_depend>catkin</buildtool_depend>
   
