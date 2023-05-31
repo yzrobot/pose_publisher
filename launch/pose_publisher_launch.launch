@@ -1,11 +1,19 @@
 <launch>
-  <arg name="robot_id" default="robot_"/>
+  <arg name="id_robot" default="robot"/>
   <arg name="frequency" default="10"/>
-  <arg name="map_frame" default="$(arg robot_id)map"/>
-  <arg name="base_frame" default="$(arg robot_id)base_footprint"/>
-  <arg name="topic_republish" default="$(arg robot_id)pose"/>
+  <arg name="map_frame_suffix" default="map"/>
+  <arg name="base_frame_suffix" default="_base_footprint"/>
+  <arg name="map_frame" default="$(arg id_robot)_$(arg map_frame_suffix)"/>
+  <arg name="base_frame" default="$(arg id_robot)_$(arg base_frame_suffix)"/>
+  <arg name="topic_republish" default="$(arg id_robot)_pose"/>
+  <arg name="node_name" default="pose_publisher"/>
 
-  <node pkg="pose_publisher" type="pose_publisher" name="node_pose_publisher"  output="screen">
+  <node
+    pkg="pose_publisher"
+    type="pose_publisher"
+    name="$(arg node_name)"
+    output="screen"
+  >
     <param name="publish_frequency" value="$(arg frequency)"/>
     <param name="map_frame" value="$(arg map_frame)"/>
     <param name="base_frame" value="$(arg base_frame)"/>
