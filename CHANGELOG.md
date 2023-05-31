@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.1.1-rc02] - 2023-05-31
+### Changed
+- Changed prefix to id_robot
+- Added map suffix
+- Added base frame suffix
+
 ## [0.1.1-rc01] - 2023-05-31
 ### Changed
 - Added `node_name` argument to launch
