@@ -4,8 +4,14 @@
   <arg name="map_frame" default="$(arg robot_id)map"/>
   <arg name="base_frame" default="$(arg robot_id)base_footprint"/>
   <arg name="topic_republish" default="$(arg robot_id)pose"/>
+  <arg name="node_name" default="pose_publisher"/>
 
-  <node pkg="pose_publisher" type="pose_publisher" name="node_pose_publisher"  output="screen">
+  <node
+    pkg="pose_publisher"
+    type="pose_publisher"
+    name="$(arg node_name)"
+    output="screen"
+  >
     <param name="publish_frequency" value="$(arg frequency)"/>
     <param name="map_frame" value="$(arg map_frame)"/>
     <param name="base_frame" value="$(arg base_frame)"/>
