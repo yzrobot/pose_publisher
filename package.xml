@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package>
   <name>pose_publisher</name>
-  <version>0.1.1</version>
+  <version>0.1.2</version>
   <description>This package provides the current position and orientation of the robot in the map with PoseWithCovarianceStamped format.</description>
 
   <author email="zhi.yan@ai.univ-paris8.fr">Zhi Yan</author>
