@@ -7,6 +7,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.1.2-rc01] - 2023-09-25
+### Added
+- Added `pose_publisher_bringup.launch` with environment variables use and namespace
+
+### Fixed
+- Creation of binaries on install and deb files 
+
+### Changed
+- Moved the launch file from `pose_publisher_launch.launch` to `pose_publisher.launch`
+
 ## [0.1.1] - 2023-05-31
 ### Changed
 - Changed prefix to id_robot
