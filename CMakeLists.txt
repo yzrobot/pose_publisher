@@ -34,7 +34,7 @@ target_link_libraries(${PROJECT_NAME}
 #############
 
 install(
-  DIRECTORY launch/
+  DIRECTORY launch
   DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}
   )
 
