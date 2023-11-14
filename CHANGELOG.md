@@ -7,10 +7,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.1.3] - 2023-11-14
+### Fixed
+- Fixed launch install folder
+
 ## [0.1.2] - 2023-09-25
 ### Added
 - Added `pose_publisher_bringup.launch` with environment variables use and namespace
-- Added Robotnik Automation S.L. license
 
 ### Fixed
 - Creation of binaries on install and deb files 
